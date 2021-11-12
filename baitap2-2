@@ -1,0 +1,18 @@
+var sx = document.getElementById('sx');//Elenment to hold screenX
+var sy = document.getElementById('sy');//Elenment to hold screenY
+var px = document.getElementById('px');//Elenment to hold pagex
+var py = document.getElementById('py');//Elenment to hold psgeY
+var cx = document.getElementById('cx');//Elenment to hold ClientX
+var cy = document.getElementById('cy');//Elenment to hold ClientY
+
+function showPosition(event) { //declare function
+    sx.value = event.screeX; // Update element with screenX
+    sx.value = event.screeX; // Update element with screenY
+    px.value = event.pageX; // Update element with pageX
+    py.value = event.pageY; // Update element with pageY
+    cx.value = event.clientX; // Update element with clientX
+    cy.value = event.clientY; // Update element with clientY
+ }
+
+ var el = document.GetElementById('body'); // Get body Element
+ el.addEventListener('mousemove', showPositon, false); // Move update position
