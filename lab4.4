@@ -1,0 +1,46 @@
+****HTML
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Event - Event Listener</title>
+    <link rel="stylesheet" href="css/co6.css" />
+</head>
+<body>
+<div id="page"
+     <h1>List king</h1>
+     <h2>New Account</h2>
+     <from method="post" action="https://www.facebook.com/bac.soi.1297">
+
+         <label for="username">Create a username: </label>
+         <input type="text" id="username" />
+         <div id="feedback"></div>
+
+         <label for="password">Create a password: </label>
+         <input type="password" id="password" />
+
+         <input type="sumit" value="sign up" />
+
+     </from>
+</div>
+<script src="js/event-listener.js"></script>
+
+
+</body>
+</html>
+
+
+
+***JavaScript
+
+function checkUsername() {
+    var elMsg = document.getElementById('feedback');
+    if (this.value.length < 5) {
+        elMsg.textContent = 'Username must be 5 characters or more';
+    } else {
+        elMsg.textContent = '';
+    }
+}
+var elUsername = document.getElementById('username');
+elUsername.addEventListener('blur', checkUsername, false);
