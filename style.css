@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("https://tin247.com.vn/999-hinh-nen-powerpoint-chuyen-nghiep-tai-ngay-mien-phi/");
+    background-size: 100% 120%;
+}
+
+#content {
+    margin: 5% 38%;
+    width: 420px;
+    height: 530px;
+    border-radius: 5px;
+    background-color: #FFB6C1;
+    box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.35);
+}
+
+#content h2 {
+    text-align: center;
+    color: #fff;
+}
+
+#content #register-box div {
+    padding: 10px 10px;
+}
+
+#register-box #fullname-input input {
+    padding: 5px;
+    border-radius: 5px;
+    width: 182px;
+}
+
+#register-box .input {
+    border-radius: 5px;
+}
+
+#register-box .input input {
+    width: 368px;
+    padding: 5px;
+}
+
+select,
+input {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+select:focus,
+input:focus {
+    border: 2px inset palevioletred;
+}
+
+#gender {
+    width: 118px;
+    height: 30px;
+}
+
+select:required:invalid {
+    color: gray;
+}
+
+option {
+    color: black;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+#birthday {
+    width: 246px;
+    height: 30px;
+}
+
+#birthday-gender-input select,
+#birthday-gender-input input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+#birthday:required:invalid {
+    color: gray;
+}
+
+#register-box-footer button{
+    width: 182px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+#register-box-footer #signup {
+    color: #fff;
+    background-color: darkcyan;
+}
+
+#register-box-footer #signup:hover {
+    background-color: rgb(2, 107, 107);
+    cursor: pointer;
+}
+
+#register-box-footer #reset {
+    background-color: crimson;
+    color: #fff;
+}
+
+#register-box-footer #reset:hover {
+    background-color: rgb(165, 10, 41);
+    cursor: pointer;
+}

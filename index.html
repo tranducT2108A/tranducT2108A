@@ -1,270 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Youtube API for rest time</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: "Tahoma";
-            box-sizing: border-box;
-        }
-
-        footer {
-            height: 50px;
-            text-align: center;
-        }
-        body{
-            width: 100%;
-            height: 1080px;
-            background-image: url("https://toigingiuvedep.vn/wp-content/uploads/2021/02/hinh-nen-ronaldo-cr7-dep-nhat.jpg");
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        header {
-            padding: 15px;
-        }
-        .model-content{
-            border-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 10px;
-            margin: 10px auto;
-        }
-
-        header .logo img{
-            float: left;
-            width: 30%;
-            width: 100px;
-        }
-
-        header .search-box {
-            padding: 25px 0px;
-            float: left;
-            width: 70%;
-        }
-
-        header::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .form-group {
-            margin: 10px 5px;
-        }
-
-        .form-group label:first-child {
-            width: 15%;
-            float: left;
-        }
-
-        .form-group label {
-            float: left;
-        }
-
-        .form-group .form-control {
-            float: left;
-            border-radius: 5px;
-            margin: 5px;
-        }
-
-        .form-group::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .long-input {
-            width: 40%;
-        }
-
-        .normal-input {
-            width: 30%;
-        }
-
-        .short-input {
-            width: 20%;
-        }
-
-        .error-msg {
-            color: red;
-        }
-
-        .success-msg {
-            color: green;
-        }
-
-        #list-video {
-            padding: 10px;
-        }
-
-        #list-video::after {
-            clear: both;
-            display: table;
-            content: "";
-        }
-
-        .video {
-            width: 30%;
-            float: left;
-            margin: 0 15px;
-            text-align: center;
-        }
-
-        .video img {
-            width: 250px;
-            height: 150px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px #0c0b0b;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .video img:hover {
-            opacity: 0.7;
-        }
-
-        .video .title {
-            font-weight: bold;
-            margin-top: 10px;
-            height: 47px;
-            overflow: auto;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .search-box {
-            margin: auto;
-        }
-
-        .search-box input {
-            width: 50%;
-            height: 50%;
-            border-radius: 5px;
-            text-align: center;
-            background-image: url("https://scr.vn/wp-content/uploads/2020/07/n%E1%BB%81n-tr%E1%BA%AFng-l%E1%BA%A5p-l%C3%A1nh.jpg");
-        }
-
-
-        /* The Modal ( background) */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 100px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(17, 17, 17);
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-
-        /* Modal Content (image) */
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
-
-        /* Caption of Modal Image */
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-        }
-
-        /* Add Animation */
-        .modal-content, #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation: zoom;
-            animation-duration: 0.6s;
-        }
-
-        @-webkit-keyframes zoom {
-            from {-webkit-transform:scale(0)}
-            to{-webkit-transform: scale(1)}
-        }
-
-        @keyframes zoom {
-            from {transform:scale(0)}
-            to {transform:scale(1)}
-        }
-
-        /* The close Button */
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* 100% Image Width on Smaller Screens */
-        @media only screen and (max-width: 700px){
-            .modal-content {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Group1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-    <div class="logo">
-        <img src="https://logosmarcas.net/wp-content/uploads/2020/04/YouTube-Logo.png" height="60" width="60" />
-    </div>
-    <div class="search-box">
-        <input id="keyword"  type="text"  placeholder="Search"  >
-    </div>
-</header>
+    <div id="main">
+        <header>
+            <!-- <h1>Form Validation using HTML,CSS,JS</h1> -->
+        </header>
+        
+        <div id="content">
+            <h2>Bai kiem tra qua mon</h2>
+            <div id="register-box">
+                <!-- FULLNAME  -->
+                <div id="fullname-input">
+                    <input type="text" id="fname" name="fname" placeholder="First Name:" onchange="takeData()">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name:" onchange="takeData()">
+                </div>
 
-<div id="myModel" class="model">
-         <span class="close">
-             &times;
-         </span>
-    <iframe class="model-content" id="video-frame" width="700" height="415"  src(unknown) frameborder="0" allowfullscreen>
-    </iframe>
-    <div id="caption"></div>
-</div>
-<div id="list-video">
-    <div class="video" onclick="showVideo('yET2SBRuNm0')">
-        <img src="https://img.youtube.com/vi/yET2SBRuNm0/default.jpg">
-        <div class="title">Thủ Đô Cypher
+                <!-- EMAIL -->
+                <div class="input" id="email-input">
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com" onchange="takeData()">
+                </div>
+
+                <!-- Phone -->
+                <div class="input" id="phone-input">
+                    <input type="text" id="mobile" name="mobile" placeholder="Mobile Phone" onchange="takeData()">
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input" id="password-input">
+                    <input type="password" id="password" name="password" placeholder="Password" onchange="takeData()">
+                </div>
+
+                <!-- GENDER -->
+               <div class="" id="gender-input">
+                <select id="gender" name="gender" required onchange="takeData()">
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            
+            </div>
+                <!-- Interest -->
+                <div class="" id="Interest-input">
+                    <select id="Interest" name="Interest" required onchanghe="checkbox()">
+                        <option value="" disabled selected>Interest</option>
+                        <option value="watch a movie">watch a movie</option>
+                        <option value="play football">Play football</option>
+                        <option value="surf the web">Surf the web</option>
+                    </select>
+                
+                    <form action="#" id="Introduce Yoursefl">Introduce Yoursefl:
+                    </form>
+                    <br>
+                    <textarea rows="6" cols="60" name="comment" form="Introduce Yoursefl">
+                    Nhập văn bản...
+                    </textarea>
+                    <button class="btn">Submit</button>
+        </div>
+            </div>
         </div>
     </div>
-    <div class="video" onclick="showVideo('fSZiL2ZRSec')">
-        <img src="https://img.youtube.com/vi/yET2SBRuNm0/default.jpg">
-        <div class="title">Ai cũng phải dolce thôi
-        </div>
-    </div>
-
-    <footer>
-<span>Working with Yutube API - FPT Aptech &copy; 2021 </span>
-    </footer>
-    <script type="text/javascript" src="js/indexx.js"></script>
+    <script src="./assets/js/register.js"></script>
 </body>
+
 </html>
