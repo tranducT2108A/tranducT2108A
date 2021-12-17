@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>google</title>
+    <link rel="stylesheet" href="css/google.css">
+
+
+
+</head>
+<body>
+
+<form id="login">
+    <div id="border">
+        <img src="img/gg.jpg" alt="google" >
+        <h3>Create your Google Account</h3>
+        <div id="name">
+            <input type="text" placeholder="First name" id="fname">
+            <input type="text" placeholder="Last name" id="lname">
+            <div id="msg-name" class="msg"></div>
+        </div>
+        <div id="username">
+            <input type="text" placeholder="Username" id="emailName" >
+            <div id="msg-username" class="msg"></div>
+            <div id="youcan">You can use letters,numbers &periods</div>
+        </div>
+        <button type="button" onclick="document.getElementById('emailName').focus()">Use my current email address instead</button>
+        <div id="pass">
+            <input type="password"  placeholder="Password" id="password">
+            <input type="password" placeholder="Confirm" id="confirm">
+            <div id="msg-password" class="msg"></div>
+            <div id="character">Use 8 or more characters with a mix of letters, numbers & symbols</div><br>
+            <label><input type="checkbox" id="checkbox" value="Show password" onclick="showPass()">Show password</label>
+        </div>
+        <div id="nextValue">
+            <button type="button" id="instead" >Sign in instead</button>
+            <button type="button" class="next" onclick="check()">Next</button>
+        </div>
+    </div>
+    <figure id="img">
+        <img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg" width="244px" height="244px">
+        <figcaption>One account. All of Google working for you.</figcaption>
+    </figure>
+</form>
+
+
+<form id=login2>
+    <img src="img/gg.jpg" alt="google">
+    <div id="border2">
+        <div id="outName"></div>
+        <div id="outGmail"></div>
+        <select required id="nation">
+            <option>Viet Nam(+84)</option>
+            <option>Afghanistan(+93)</option>
+            <option>Albania(+355)</option>
+        </select>
+        <input type="text" placeholder="Phone number(optional)" id="numberPhone">
+        <div style="font-size: 12px;color: #675858">Google will use this number only for account security.
+            Your number won’t be visible to others.
+            You can choose later whether to use it for other purposes.</div>
+
+        <input type="text" placeholder="Recovery email address(optional)" id="address">
+        <div style="font-size: 12px;color: #675858">We'll use it to keep your account secure</div>
+        <div id="date">
+            <select required id="month">
+
+                <option class="thang" value>Month</option>
+                <option value="1" class="thang">January</option>
+                <option value="2" class="thang">February</option>
+                <option value="3" class="thang">March</option>
+                <option value="4" class="thang">April</option>
+                <option value="5" class="thang">May</option>
+                <option value="6" class="thang">June</option>
+                <option value="7" class="thang">July</option>
+                <option value="8" class="thang">August</option>
+                <option value="9" class="thang">September</option>
+                <option value="10" class="thang">October</option>
+                <option value="11" class="thang">November</option>
+                <option value="12" class="thang">December</option>
+
+            </select>
+            <input type="tel" id="day" placeholder="Day" pattern="[0-31]">
+            <input type="tel" id="year" placeholder="Year">
+            <div id="msg-date"  class="msg"></div>
+        </div>
+
+        <select required id="gender">
+            <option class="gd" value="">Gender</option>
+            <option class="gd" value="2">Female</option>
+            <option class="gd" value="1">Male</option>
+            <option class="gd" value="3">Rather</option>
+            <option class="gd" value="4">Custom</option>
+
+        </select>
+        <div id="msg-gender"  class="msg"></div>
+        <button id="back" type="button" onclick="rollBack()">Back</button>
+        <button type="button" class="next"  id="next2" onclick="checkValue()">Next</button>
+        <div id="requi" ></div>
+    </div>
+
+
+</form>
+
+<footer>
+    <div id="language">
+        <select>
+            <option>English(United Kingdom)</option>
+            <option>language2</option>
+            <option>language3</option>
+            <option>language4</option>
+        </select>
+    </div>
+    <div id="help">
+        <button type="button" class="footer">Help</button>
+        <button type="button" class="footer">Privacy</button>
+        <button type="button" class="footer">Terms</button>
+    </div>
+</footer>
+
+<script src="google.js"></script>
+
+</body>
+</html>
